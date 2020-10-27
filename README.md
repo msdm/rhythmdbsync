@@ -8,7 +8,7 @@ the ratings from the database to the actual files.
 * Python V3.6 or later
 * Python eyed3 package
 
-Alternatively, you can download the binary version from the release section, which does not have any specific requirements.
+Alternatively, you can download the binary version, which does not have any specific requirements, from the release section.
     
 ## Usage
 
