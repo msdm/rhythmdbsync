@@ -353,12 +353,12 @@ def read_options(config):
         opts, args = getopt.getopt(sys.argv[1:], 'hi:o:f', ['help', 'input-file=', 'output-file=', 'force', 'log-file=', 'log-level=', 'dry'])
     except getopt.GetoptError:
         print(help_str)
-        exit(2)
+        sys.exit(2)
         
     for opt, value in opts:
         if opt in ('-h', '--help'):
             print(help_str)
-            exit()
+            sys.exit()
         elif opt in ('-i', '--input-file'):
             config['input-file'] = value
         elif opt in ('-o', '--output-file'):
@@ -379,7 +379,7 @@ def read_options(config):
         config['type'] = args[0]
     else:
         print(help_str)
-        exit(2)
+        sys.exit(2)
         
     if not config['input-file']:
         default_dbfile = '~/.local/share/rhythmbox/rhythmdb.xml'
@@ -389,14 +389,14 @@ def read_options(config):
             config['input-file'] = str(path)
         else:
             print('File "{}" was not found. Please provide the Rhythmbox database file manually.'.format(default_dbfile))
-            exit(2)
+            sys.exit(2)
         
     if not config['output-file'] and config['type'] == 'import':
         ans = input('No output file was provided. The input file will be overwritten. Are you sure? (yes/No) ')
         if ans.lower() in ('y', 'yes'):
             config['output-file'] = config['input-file']
         else:
-            exit()
+            sys.exit()
 
 
 def main():
