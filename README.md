@@ -2,6 +2,11 @@
 
 A tool to import ID3 ratings (Popularities) to Rhythmbox database, and export
 the ratings from the database to the actual files.
+
+## Requirements
+
+* Python V3.6 or later
+* Python eyed3 package
     
 ## Usage
 
