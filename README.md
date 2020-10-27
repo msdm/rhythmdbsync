@@ -3,7 +3,7 @@
 A tool to import ID3 ratings (Popularities) to Rhythmbox database, and export
 the ratings from the database to the actual files.
     
-Usage:
+## Usage
 
     rhythmdbsync [options] import
         Import the ID3 ratings from files to the database. If a POPM ID3 frame
@@ -14,7 +14,7 @@ Usage:
     rhythmdbsync [options] export
         Export the ratings from the database to the actual files.
     
-Options:
+## Options
 
     -h, --help
         Show this page.
