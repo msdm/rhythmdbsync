@@ -1,5 +1,6 @@
 #
 # Copyright (c) 2020, msdm
+# https://github.com/msdm/rhythmdbsync
 # 
 # All rights reserved.
 # 
